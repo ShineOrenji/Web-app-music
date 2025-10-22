@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="icon" type="image" href="env/ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan judul aplikasi -->
+        <div class="header">
+            <h1 style="font-size: 2.5em;">+ For <span style="color: #6aade4;">You -</span></h1>
+            <p>Gatau gabut aja, hehe</p>
+        </div>
+        
+        <!-- Album art dengan animasi -->
+        <!-- <div class="album-container">
+            <div class="album-art">
+                <div class="vinyl">
+                    <div class="vinyl-hole"></div>
+                </div>
+                <div class="album-cover">
+                    <div class="album-image"></div>
+                </div>
+            </div>
+        </div> -->
+        
+        <!-- Info lagu yang sedang diputar -->
+        <div class="song-info">
+            <!-- <h2 class="song-title"></h2> -->
+            <!-- <p class="song-artist">Nama Artis</p> -->
+            <p class="song-artist" style="color: white;">Dengerin yah >_<</p>
+        </div>
+        
+        <!-- Kontrol pemutaran musik -->
+        <div class="player-controls">
+            <button class="control-btn" id="prev-btn">⏮</button>
+            <button class="control-btn play-btn" id="play-btn">▶</button>
+            <button class="control-btn" id="next-btn">⏭</button>
+        </div>
+        
+        <!-- Progress bar untuk menunjukkan progres lagu -->
+        <div class="progress-container">
+            <span class="time" id="current-time">0:00</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <span class="time" id="duration">0:00</span>
+        </div>
+        
+        <!-- Kontrol volume -->
+        <div class="volume-control">
+            <span class="volume-icon" style="color: white;">V</span>
+            <input type="range" min="0" max="100" value="70" class="volume-slider" id="volume-slider">
+        </div>
+        
+        <!-- Audio element - ganti src dengan path file musik Anda -->
+        <audio id="audio-player" src="music/Napking Teman Official Music Video.mp3"></audio>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
